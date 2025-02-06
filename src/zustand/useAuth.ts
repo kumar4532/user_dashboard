@@ -10,9 +10,12 @@ type GoogleAuthUser = {
     locale: string;
 };
 
-const useAuth = create((set) => ({
-    authUser: null as GoogleAuthUser | null,
-    setAuthUser: (authUser: GoogleAuthUser) => set({ authUser })
-}))
+const useAuth = create<{
+    authUser: GoogleAuthUser | null;
+    setAuthUser: (authUser: GoogleAuthUser) => void;
+}>((set) => ({
+    authUser: null,
+    setAuthUser: (authUser) => set({ authUser }),
+}));
 
 export default useAuth;

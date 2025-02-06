@@ -53,7 +53,7 @@ const EditorView: FC = () => {
         <IconButton
             onClick={() => {
                 console.log(`${action}`);
-                editor.chain().focus()[action]().run()
+                (editor.chain().focus() as any)[action]().run();
             }}
             color={isActive ? "primary" : "default"}
         >
