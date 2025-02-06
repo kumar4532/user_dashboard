@@ -4,7 +4,7 @@ import useAuth from "../zustand/useAuth";
 const GoogleAuthBtn = () => {
     const { setAuthUser } = useAuth();
 
-    const clientId = '862864069823-11adoev9bdof8f3hiu55u3m5587tdnn4.apps.googleusercontent.com';
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
     return (
         <div className='flex justify-center items-center h-screen'>
