@@ -41,8 +41,7 @@ This project is built using React, TypeScript, Tailwind CSS, MUI Library, and Zu
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/kumar4532/user_dashboard.git
 ```
 
 Install Dependecies:
